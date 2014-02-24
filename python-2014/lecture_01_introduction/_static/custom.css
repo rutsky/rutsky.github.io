@@ -1,0 +1,83 @@
+pre {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+table.docutils td, table.docutils th {
+  border-bottom: 0;
+}
+
+table.center-cells td, table.center-cells img {
+  vertical-align: middle;
+}
+
+#id1 h1 {
+  margin-top: 50px !important;
+}
+
+.python-logo img {
+  padding-top: 20px;
+}
+
+p.center-text {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px !important;
+  letter-spacing: -1px !important;
+}
+
+h2 {
+  letter-spacing: -1px !important;
+}
+
+/* https://gist.github.com/klmr/3135217 */
+.counter {
+  bottom: 1ex;
+  right: 1em;
+  font-size: 66%;
+  position: absolute;
+  z-index: 999;
+}
+/*.counter:before { content: '[ '; }
+.counter:after { content: ' ]'; }*/
+
+article ul {
+  font-size: 0.95em !important;
+  letter-spacing: normal;
+}
+
+article.smaller ul {
+  font-size: 0.90em !important;
+}
+
+article.smaller2 ul {
+  font-size: 0.90em !important;
+}
+
+article.smaller2 p,
+article.smaller2 ul {
+	  font-size: 20px;
+	    line-height: 24px;
+	      letter-spacing: 0;
+}
+article.smaller2 table {
+	  font-size: 20px;
+	    line-height: 24px;
+	      letter-spacing: 0;
+}
+article.smaller2 pre {
+	  font-size: 14px;
+	    line-height: 17px;
+	      letter-spacing: 0;
+}
+article.smaller2 q {
+	  font-size: 40px;
+	    line-height: 48px;
+}
+article.smaller2 q::before,
+article.smaller2 q::after {
+	  font-size: 60px;
+}
