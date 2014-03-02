@@ -296,7 +296,7 @@ Python принято называть &quot;скрытые&quot; функции
 
 </article>
 <article class="smaller2 slide level-2" id="id10">
-<h2>Скрытие имён в модулях (1/2)</h2>
+<h2>Скрытие имён в модулях (2/2)</h2>
 <p>Если в модуле объявлена глобальная переменная <tt class="docutils literal"><span class="pre">__all__</span></tt>, то с помощью
 <tt class="docutils literal"><span class="pre">from</span> <span class="pre">...</span> <span class="pre">import</span> <span class="pre">*</span></tt> из этого модуля будут импортироваться только имена,
 перечисленные в списке или кортеже <tt class="docutils literal"><span class="pre">__all__</span></tt></p>
@@ -437,7 +437,7 @@ Python принято называть &quot;скрытые&quot; функции
 23
 24
 25
-26</pre></div></td><td class="code"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># Функция dir() позволяет получить список членов (aтрибутов) объекта</span>
+26</pre></div></td><td class="code"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># Функция dir() позволяет получить список членов (атрибутов) объекта</span>
 <span class="gp">... </span><span class="n">a</span> <span class="o">=</span> <span class="mi">30</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">dir</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>  
 <span class="go">[&#39;__abs__&#39;, &#39;__add__&#39;, &#39;__and__&#39;, &#39;__bool__&#39;, &#39;__ceil__&#39;, &#39;__class__&#39;, ...</span>
@@ -740,7 +740,7 @@ C:\&gt;
 </pre></div>
 </div>
 </li>
-<li><p class="first">команду опеределения функции (или класса):</p>
+<li><p class="first">команду определения функции (или класса):</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
 </pre></div>
@@ -998,8 +998,8 @@ C:\&gt;
 <li><tt class="docutils literal"><span class="pre">iter*</span></tt> — последовательности</li>
 <li>возвращает последовательность кортежей:<ul>
 <li>(первые элементы последовательностей)</li>
-<li>(вторые эелементы последовательностей)</li>
-<li>(третьи эелементы последовательностей)</li>
+<li>(вторые элементы последовательностей)</li>
+<li>(третьи элементы последовательностей)</li>
 <li>...</li>
 </ul>
 </li>
@@ -1058,8 +1058,8 @@ C:\&gt;
 <li><tt class="docutils literal"><span class="pre">iter*</span></tt> — последовательности аргументов</li>
 <li>возвращает последовательность:<ul>
 <li>func(первые элементы последовательностей)</li>
-<li>func(вторые эелементы последовательностей)</li>
-<li>func(третьи эелементы последовательностей)</li>
+<li>func(вторые элементы последовательностей)</li>
+<li>func(третьи элементы последовательностей)</li>
 <li>...</li>
 </ul>
 </li>
@@ -1184,12 +1184,12 @@ C:\&gt;
 </div>
 </li>
 <li><p class="first">Это удобно для обработки списков:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;one&#39;</span><span class="p">,</span> <span class="s">&#39;two&#39;</span><span class="p">,</span> <span class="s">&#39;three&#39;</span><span class="p">])</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># оставляет только те элементы, у которых длина 3</span>
+<span class="gp">... </span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">s</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="s">&#39;one&#39;</span><span class="p">,</span> <span class="s">&#39;two&#39;</span><span class="p">,</span> <span class="s">&#39;three&#39;</span><span class="p">])</span>
 <span class="go">[&#39;one&#39;, &#39;two&#39;]</span>
 <span class="go">&gt;&gt;&gt;</span>
 </pre></div>
 </div>
-<p>фильтрует только те элементы, у которых длина 3</p>
 <div class="highlight-python3"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
 <span class="go">[0, 1, 8, 27]</span>
 <span class="go">&gt;&gt;&gt;</span>
